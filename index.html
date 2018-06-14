@@ -10,6 +10,11 @@
 <body>
 
 	<script type="text/javascript">
+
+
+var w = window.innerWidth;
+var h = window.innerHeight;
+alert(w+"  w+ h "+h);
 		var plataformas;
 		var platillos;
 		var marciano;	
@@ -18,7 +23,7 @@
 		var textoScore;
 		var fondo, boom;
 		
-		var marte = new Phaser.Game(800, 600, Phaser.AUTO, 'marte', {preload: preload, create: create, update: update});
+		var marte = new Phaser.Game(w, h, Phaser.AUTO, 'marte', {preload: preload, create: create, update: update});
 		
 		function preload() {
 			/*
